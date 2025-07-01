@@ -22,8 +22,9 @@ describe(`Function 'arrayReverse':`, () => {
     expect(arrayReverse(['Mate', 'Academy'])[1].length).toBe(7);
   });
 
-  it(`function should reverse each string and then reverse `
-    + 'the order of the array', () => {
+  it(`Function should reverse the given strings in the array and their order `
+    + 'so that the length of the strings from the original array does '
+    + 'not change', () => {
     expect(arrayReverse(['Mate', 'Academy'])).toEqual(['ymed', 'acAetaM']);
 
     expect(arrayReverse(['I', 'am', 'a', 'student!']))
