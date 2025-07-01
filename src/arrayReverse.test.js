@@ -11,7 +11,7 @@ describe(`Function 'arrayReverse':`, () => {
     expect(arrayReverse(['Mate', 'Academy'])).toBeInstanceOf(Array);
   });
 
-  it(`should return an empty string
+  it(`should return an arr with empty string inside
     if original array consists of an empty string`, () => {
     expect(arrayReverse([''])).toEqual(['']);
   });
@@ -22,16 +22,16 @@ describe(`Function 'arrayReverse':`, () => {
     expect(arrayReverse(['Mate', 'Academy'])[1].length).toBe(7);
   });
 
-  it(`should return right res`, () => {
+  it(`function should reverse each string and then reverse `
+    + 'the order of the array', () => {
     expect(arrayReverse(['Mate', 'Academy'])).toEqual(['ymed', 'acAetaM']);
-  });
 
-  it(`should work right with single el`, () => {
-    expect(arrayReverse(['Mate'])).toEqual(['etaM']);
-  });
-
-  it(`should work right with a lot of elements`, () => {
     expect(arrayReverse(['I', 'am', 'a', 'student!']))
       .toEqual(['!', 'tn', 'e', 'dutsamaI']);
+  });
+
+  it(`function should reverse single string and then reverse the `
+    + 'order of the array', () => {
+    expect(arrayReverse(['Mate'])).toEqual(['etaM']);
   });
 });
